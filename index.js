@@ -1,4 +1,4 @@
-#! usr/bin/env node
+#! /usr/bin/env node
 import inquirer from "inquirer";
 let answer = await inquirer.prompt([{
         message: "Enter your first value",
@@ -14,7 +14,7 @@ let answer = await inquirer.prompt([{
         mesassge: "Select opprator",
         type: "list",
         name: "Oprator",
-        choices: ['Addition', 'Subtraction', 'Multipiction', 'Divison']
+        choices: ['Addition', 'Subtraction', 'Multipictions', 'Divison']
     }]);
 if (answer.Oprator === "Addition") {
     console.log(answer.Firstvalue + answer.Secondevalue);
