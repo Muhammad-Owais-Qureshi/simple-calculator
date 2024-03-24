@@ -14,7 +14,7 @@ let answer = await inquirer.prompt([{
         mesassge: "Select opprator",
         type: "list",
         name: "Oprator",
-        choices: ['Addition', 'Subtraction', 'Multipictions', 'Divison']
+        choices: ['Addition', 'Subtraction', 'Multipiction', 'Divison']
     }]);
 if (answer.Oprator === "Addition") {
     console.log(answer.Firstvalue + answer.Secondevalue);
